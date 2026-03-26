@@ -1,18 +1,59 @@
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-[#0d1625] py-[2.5rem] border-t border-[rgba(245,166,35,.15)]">
+    <footer className="bg-[#1B2A4A] text-white pt-[5rem] pb-[2rem] border-t border-[rgba(245,166,35,0.1)]">
       <div className="container mx-auto px-[1.5rem] max-w-[1140px]">
-        <div className="footer-inner flex justify-between items-center flex-wrap gap-[1rem] flex-col sm:flex-row text-center sm:text-left">
-          <div className="footer-logo">
-            <img src="logo.png" alt="AJ Digital Growth" className="h-[38px]"
-              onError={(e) => { (e.target as HTMLImageElement).style.display='none'; (e.target as HTMLImageElement).nextElementSibling && ((e.target as HTMLImageElement).nextElementSibling as HTMLElement).style.setProperty('display', 'block'); }} />
-            <span style={{ display: 'none' }} className="font-['Syne'] text-[1rem] font-extrabold text-[#F5A623]">AJ Digital Growth</span>
+        <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr] gap-[4rem] mb-[4rem]">
+          
+          {/* BRAND COLUMN */}
+          <div className="footer-brand">
+            <img 
+              src="/logo.png" 
+              alt="AJ Digital Growth" 
+              className="h-[50px] w-auto mb-[1.5rem]" 
+              onError={(e) => { 
+                (e.target as HTMLImageElement).style.display='none'; 
+              }} 
+            />
+            <p className="text-[rgba(255,255,255,0.7)] text-[0.95rem] leading-[1.6] max-w-[300px]">
+              Helping Malawian businesses bridge the gap between their services and their online customers through expert digital strategy.
+            </p>
           </div>
-          <p className="footer-copy text-[.85rem] text-[rgba(255,255,255,.4)]">© 2025 AJ Digital Growth Malawi. All rights reserved.</p>
-          <div className="footer-links flex gap-[1.5rem]">
-            <a href="#services" className="text-[.85rem] text-[rgba(255,255,255,.5)] transition-colors duration-200 hover:text-[#F5A623]">Services</a>
-            <a href="#pricing" className="text-[.85rem] text-[rgba(255,255,255,.5)] transition-colors duration-200 hover:text-[#F5A623]">Pricing</a>
-            <a href="https://wa.me/265987808110" target="_blank" rel="noreferrer" className="text-[.85rem] text-[rgba(255,255,255,.5)] transition-colors duration-200 hover:text-[#F5A623]">WhatsApp</a>
+
+          {/* QUICK LINKS */}
+          <div className="footer-links">
+            <h4 className="text-[#F5A623] font-bold mb-[1.5rem] uppercase tracking-wider text-[0.85rem]">Navigation</h4>
+            <ul className="flex flex-col gap-[0.8rem]">
+              <li><a href="#problem" className="text-[rgba(255,255,255,0.8)] hover:text-[#F5A623] transition-colors">The Problem</a></li>
+              <li><a href="#services" className="text-[rgba(255,255,255,0.8)] hover:text-[#F5A623] transition-colors">Our Services</a></li>
+              <li><a href="#about" className="text-[rgba(255,255,255,0.8)] hover:text-[#F5A623] transition-colors">About AJ</a></li>
+              <li><a href="#pricing" className="text-[rgba(255,255,255,0.8)] hover:text-[#F5A623] transition-colors">Plans</a></li>
+            </ul>
+          </div>
+
+          {/* CONTACT INFO */}
+          <div className="footer-contact">
+            <h4 className="text-[#F5A623] font-bold mb-[1.5rem] uppercase tracking-wider text-[0.85rem]">Get In Touch</h4>
+            <p className="text-[rgba(255,255,255,0.8)] mb-[0.5rem]">📍 Mzuzu, Malawi</p>
+            <p className="text-[rgba(255,255,255,0.8)] mb-[1.5rem]">📧 hello@androweb.io</p>
+            <a 
+              href="https://wa.me/265987808110" 
+              className="text-[#F5A623] font-bold flex items-center gap-2 hover:underline"
+            >
+              Chat on WhatsApp →
+            </a>
+          </div>
+        </div>
+
+        {/* BOTTOM BAR */}
+        <div className="pt-[2rem] border-t border-[rgba(255,255,255,0.05)] flex flex-col md:flex-row justify-between items-center gap-[1rem]">
+          <p className="text-[rgba(255,255,255,0.5)] text-[0.85rem]">
+            © {currentYear} AJ Digital Growth. All rights reserved.
+          </p>
+          <div className="flex gap-[1.5rem]">
+            <a href="#" className="text-[rgba(255,255,255,0.4)] hover:text-white text-[0.75rem]">Privacy Policy</a>
+            <a href="#" className="text-[rgba(255,255,255,0.4)] hover:text-white text-[0.75rem]">Terms of Service</a>
           </div>
         </div>
       </div>
