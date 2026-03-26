@@ -36,7 +36,10 @@ export default function Footer() {
           <div className="footer-contact">
             <h4 className="text-[#F5A623] font-bold mb-[1.5rem] uppercase tracking-wider text-[0.85rem]">Get In Touch</h4>
             <p className="text-[rgba(255,255,255,0.8)] mb-[0.5rem]">📍 Mzuzu, Malawi</p>
-            <p className="text-[rgba(255,255,255,0.8)] mb-[1.5rem]">📧 hello@androweb.io</p>
+          <a href="https://digitalgrowthmalawi.netlify.app"
+              className="text-[#F5A623] font-bold flex items-center gap-2 hover:underline"
+            >
+              digitalgrowthmalawi.com </a>
             <a 
               href="https://wa.me/265987808110" 
               className="text-[#F5A623] font-bold flex items-center gap-2 hover:underline"
