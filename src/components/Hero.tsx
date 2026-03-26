@@ -1,6 +1,10 @@
 export default function Hero() {
   return (
     <section id="hero" className="bg-[#1B2A4A] min-h-screen flex items-center pt-[70px] relative overflow-hidden">
+      <div class="hero-content">
+   <img src="me.jpg" alt="AJ Simwinga" class="profile-img">
+   <h1>Get More Customers...</h1>
+</div>
       <div className="hero-bg-pattern absolute inset-0 z-0"></div>
       <div className="hero-grid-lines absolute inset-0 z-0 opacity-[.04]"></div>
       <div className="container mx-auto px-[1.5rem] max-w-[1140px]">
