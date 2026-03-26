@@ -18,6 +18,9 @@ export default function Navbar() {
     <nav id="navbar" style={{ boxShadow: isScrolled ? '0 4px 24px rgba(0,0,0,.3)' : 'none' }} className="fixed top-0 left-0 right-0 z-[1000] bg-[rgba(27,42,74,.97)] backdrop-blur-[10px] border-b border-[rgba(245,166,35,.15)] transition-all duration-300">
       <div className="flex items-center justify-between py-[.9rem] px-[1.5rem] max-w-[1140px] mx-auto">
         <div className="nav-logo">
+          <a href="#" class="logo">
+  <img src="images/logo.png" alt="AJ Digital Growth Logo" style="height: 40px;">
+</a>
           <img src="logo.png" alt="AJ Digital Growth" className="h-[44px] w-auto" onError={(e) => { (e.target as HTMLImageElement).style.display='none'; (e.target as HTMLImageElement).nextElementSibling && ((e.target as HTMLImageElement).nextElementSibling as HTMLElement).style.setProperty('display', 'block'); }} />
           <span style={{ display: 'none' }} className="font-['Syne'] text-[1.1rem] font-extrabold text-[#F5A623]">AJ<span className="text-white"> Digital Growth</span></span>
         </div>
