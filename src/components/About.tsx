@@ -26,7 +26,7 @@ export default function About() {
         <div className="about-inner grid grid-cols-1 md:grid-cols-[1fr_1.4fr] gap-[5rem] items-center">
           <div className="about-image reveal" ref={el => revealRefs.current[0] = el}>
             <div className="about-img-frame rounded-[20px] overflow-hidden border-[3px] border-[#F5A623] shadow-[16px_16px_0_#C94B20]">
-              <img src="aj-portrait.png" alt="AJ Siminga" className="w-full object-cover block"
+              <img src="me.png" alt="AJ Siminga" className="w-full object-cover block"
                 onError={(e) => { (e.target as HTMLImageElement).style.display='none'; (e.target as HTMLImageElement).nextElementSibling && ((e.target as HTMLImageElement).nextElementSibling as HTMLElement).style.setProperty('display', 'block'); }} />
               <div className="about-img-placeholder w-full h-[480px] bg-gradient-to-br from-[#C94B20] to-[#8B2500]" style={{ display: 'none' }}></div>
             </div>
