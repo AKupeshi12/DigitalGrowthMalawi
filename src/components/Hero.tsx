@@ -42,7 +42,7 @@ export default function Hero() {
           <div className="hero-image-wrap relative hidden md:block">
             <div className="hero-img-bg absolute inset-0 rounded-[24px] bg-gradient-to-br from-[#C94B20] to-[#243660] rotate-[3deg]"></div>
             <div className="hero-img-card relative z-[1] rounded-[20px] overflow-hidden border-[3px] border-[rgba(245,166,35,.3)] shadow-[0_32px_80px_rgba(0,0,0,.4)]">
-              <img src="banner.png" alt="AJ Digital Growth — Get More Customers Online" className="w-full h-[500px] object-cover object-top"
+              <img src="banner.png" alt="AJ Digital Growth — Get More Customers Online" className="w-full h-[300px] object-cover object-top"
                 onError={(e) => { (e.target as HTMLImageElement).style.display='none'; (e.target as HTMLImageElement).nextElementSibling && ((e.target as HTMLImageElement).nextElementSibling as HTMLElement).style.setProperty('display', 'flex'); }} />
               <div className="hero-img-placeholder w-full h-[500px] bg-gradient-to-br from-[#C94B20] to-[#8B2500] flex flex-col items-center justify-center" style={{ display: 'none' }}>
                 <div className="text-center text-white">
