@@ -30,7 +30,7 @@ export default function About() {
             <div className="about-img-frame rounded-[20px] overflow-hidden border-[3px] border-[#F5A623] shadow-[16px_16px_0_#C94B20]">
               <img 
                 src="/me.png" 
-                alt="AJ Samuel Simwinga - Digital Growth Specialist" 
+                alt="AJ Simwinga - Digital Growth Specialist" 
                 className="w-full h-[480px] object-cover block"
                 onError={(e) => { 
                   const target = e.target as HTMLImageElement;
